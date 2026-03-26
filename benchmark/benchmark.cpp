@@ -103,25 +103,25 @@ int main(){
           << std::setw(20) << "std::async"
           << std::setw(10) << "-"
           << std::setw(12) << result2
-          << std::fixed << std::setprecision(1)<< std::setw(10) << double(result1)/result2 << "\n";
+          << std::setw(10) << (std::to_string(double(result1)/result2).substr(0,3) + "x") << "\n";
           
     std::cout << std::left
           << std::setw(20) << "ThreadPool"
           << std::setw(10) << "2"
           << std::setw(12) << result3
-          << std::fixed << std::setprecision(1)<< std::setw(10) << double(result1)/result3 << "\n";
+          << std::setw(10) << (std::to_string(double(result1)/result3).substr(0,3) + "x") << "\n";
 
     std::cout << std::left
           << std::setw(20) << "ThreadPool"
           << std::setw(10) << "4"
           << std::setw(12) << result4
-          << std::fixed << std::setprecision(1)<< std::setw(10) << double(result1)/result4 << "\n";
+          << std::setw(10) << (std::to_string(double(result1)/result4).substr(0,3) + "x") << "\n";
 
     std::cout << std::left
           << std::setw(20) << "ThreadPool"
           << std::setw(10) << "8"
           << std::setw(12) << result5
-          << std::fixed << std::setprecision(1)<< std::setw(10) << double(result1)/result5 << "\n";
+          << std::setw(10) << (std::to_string(double(result1)/result5).substr(0,3) + "x") << "\n";
 
     return 0;
 }
