@@ -96,7 +96,7 @@ Measured on 4-core Linux machine. 100 CPU-bound tasks (`std::sqrt` loop, 100k it
 **Requirements:** CMake 3.14+, GCC/Clang with C++17 support
 
 ```bash
-git clone https://github.com/yourusername/thread-pool.git
+git clone https://github.com/meet1214/thread-pool.git
 cd thread-pool
 mkdir build && cd build
 cmake ..
